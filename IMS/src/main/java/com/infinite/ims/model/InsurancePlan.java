@@ -27,42 +27,9 @@ public class InsurancePlan {
     
     
     
-	@Override
-	public String toString() {
-		return "InsurancePlan [planId=" + planId + ", insuranceCompany=" + insuranceCompany + ", planName=" + planName
-				+ ", planType=" + planType + ", minEntryAge=" + minEntryAge + ", maxEntryAge=" + maxEntryAge
-				+ ", description=" + description + ", availableCoverAmounts=" + availableCoverAmounts
-				+ ", waitingPeriod=" + waitingPeriod + ", createdOn=" + createdOn + ", expireDate=" + expireDate
-				+ ", periodicDiseases=" + periodicDiseases + "]";
-	}
+	
 
 
-
-
-	public InsurancePlan(String planId, InsuranceCompany insuranceCompany, String planName, String planType,
-			int minEntryAge, int maxEntryAge, String description, String availableCoverAmounts, String waitingPeriod,
-			Date createdOn, Date expireDate, String periodicDiseases) {
-		super();
-		this.planId = planId;
-		this.insuranceCompany = insuranceCompany;
-		this.planName = planName;
-		this.planType = planType;
-		this.minEntryAge = minEntryAge;
-		this.maxEntryAge = maxEntryAge;
-		this.description = description;
-		this.availableCoverAmounts = availableCoverAmounts;
-		this.waitingPeriod = waitingPeriod;
-		this.createdOn = createdOn;
-		this.expireDate = expireDate;
-		this.periodicDiseases = periodicDiseases;
-	}
-
-
-
-
-	public InsurancePlan() {
-		
-	}
     
     
     

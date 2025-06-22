@@ -72,14 +72,14 @@
 			<property-class>com.infinite.ims.model.InsurancePlan</property-class>
 			<value>#{insurancePlan}</value>
 		</managed-property>
-		
+
 		<!-- Injecting the insurancecompany model -->
 		<managed-property>
 			<property-name>insuranCompany</property-name>
 			<property-class>com.infinite.ims.model.InsuranceCompany</property-class>
 			<value>#{company}</value>
 		</managed-property>
-		
+
 
 		<!-- Injecting the InsurancePlanDao -->
 		<managed-property>
@@ -88,5 +88,52 @@
 			<value>#{insurancePlanDao}</value>
 		</managed-property>
 	</managed-bean>
+
+
+	<!-- this is for InsuranceCoverageOption -->
+
+	<!-- ✅ Model Bean -->
+	<managed-bean>
+		<managed-bean-name>insuranceCoverageOption</managed-bean-name>
+		<managed-bean-class>com.infinite.ims.model.InsuranceCoverageOption</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- ✅ DAO Bean -->
+	<managed-bean>
+		<managed-bean-name>insuranceCoverageOptionDao</managed-bean-name>
+		<managed-bean-class>com.infinite.ims.daoImpl.InsuranceCoverageOptionDaoImpl</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- ✅ Controller Bean -->
+	<managed-bean>
+		<managed-bean-name>insuranceCoverageOptionController</managed-bean-name>
+		<managed-bean-class>com.infinite.ims.controller.InsuranceCoverageOptionController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+
+		<!-- Injecting the InsuranceCoverageOption model -->
+		<managed-property>
+			<property-name>coverageOption</property-name>
+			<property-class>com.infinite.ims.model.InsuranceCoverageOption</property-class>
+			<value>#{insuranceCoverageOption}</value>
+		</managed-property>
+
+		<!-- Injecting the InsurancePlan model -->
+		<managed-property>
+			<property-name>insurancePlan</property-name>
+			<property-class>com.infinite.ims.model.InsurancePlan</property-class>
+			<value>#{insurancePlan}</value>
+		</managed-property>
+
+		<!-- Injecting the InsuranceCoverageOptionDao -->
+		<managed-property>
+			<property-name>coverageOptionDao</property-name>
+			<property-class>com.infinite.ims.daoImpl.InsuranceCoverageOptionDaoImpl</property-class>
+			<value>#{insuranceCoverageOptionDao}</value>
+		</managed-property>
+
+	</managed-bean>
+
 
 </faces-config>

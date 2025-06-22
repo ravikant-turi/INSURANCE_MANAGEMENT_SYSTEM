@@ -12,8 +12,8 @@
 
         <many-to-one name="insurancePlan" class="com.infinite.ims.model.InsurancePlan" column="plan_id" not-null="false"/>
 
-        <property name="premiumAmount" column="premium_amount" type="big_decimal"/>
-        <property name="coverageAmount" column="coverage_amount" type="big_decimal"/>
+        <property name="premiumAmount" column="premium_amount" />
+        <property name="coverageAmount" column="coverage_amount" />
         <property name="status" column="status" type="string"/>
 
     </class>

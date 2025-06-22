@@ -11,5 +11,11 @@ public class InsuranceCoverageOption {
     public double premiumAmount;
     public double coverageAmount;
     public String status = "ACTIVE";
+    
+	
+    
+    
+    
+    
 }
 
