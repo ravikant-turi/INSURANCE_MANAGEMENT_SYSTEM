@@ -6,15 +6,27 @@ import com.infinite.ims.model.InsuranceCompany;
 
 public interface InsuranceCompanyDao {
 	
+	//add company
+	
     String addCompany(InsuranceCompany company);
+    public String addcompanyTest(InsuranceCompany company) ;
+    
+    //searchByID
     
     InsuranceCompany findById(String companyId);
     
+    //searchAllCompany
+    
     List<InsuranceCompany> findAll();
+    
+    //delete company by Id
     
     void delete(InsuranceCompany company);
     
+    //update company by id
     
-    public String addcompanyTest(InsuranceCompany company) ;
+    String updateCompany(int companyId);
+    
+    
     
 }
