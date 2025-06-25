@@ -18,6 +18,8 @@ public class InsuranceCoverageOptionController {
 	List<InsuranceCoverageOption> coverageList;
 //	private String planId;
 	
+	private String searchCoverageId;
+	
 	
 	
 
@@ -33,6 +35,21 @@ public class InsuranceCoverageOptionController {
 		
 		return null;
 	}
+	
+//	search insurance coverage option with id
+	
+	public String searchInsuranceCoverageOption() {
+		
+
+		coverageOption=  coverageOptionDao.searchInsuranceCoverageOptionById(searchCoverageId);
+		
+		System.out.println("============coverageOption============");
+		System.out.println(coverageOption);
+		
+		return null;
+	}
+	
+	
 	
 
 }

@@ -10,7 +10,8 @@
             <generator class="assigned" />
         </id>
 
-        <many-to-one name="insuranceCompany" class="com.infinite.ims.model.InsuranceCompany" column="company_id" not-null="true"/>
+        <many-to-one name="insuranceCompany" class="com.infinite.ims.model.InsuranceCompany" column="company_id" not-null="true"     fetch="join" 
+        />
 
         <property name="planName" column="plan_name" type="string"/>
         <property name="planType" column="plan_type" type="string"/>

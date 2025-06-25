@@ -10,7 +10,11 @@
             <generator class="assigned" />
         </id>
 
-        <many-to-one name="insurancePlan" class="com.infinite.ims.model.InsurancePlan" column="plan_id" not-null="false"/>
+        <many-to-one name="insurancePlan" class="com.infinite.ims.model.InsurancePlan" column="plan_id"  fetch="join"  not-null="false"/>
+
+<!--  <many-to-one name="insurancePlan" class="InsurancePlan" fetch="join" column="plan_id"/> -->
+<!--<many-to-one name="insuranceCompany" class="InsuranceCompany" fetch="join" column="company_id"/>  -->
+
 
         <property name="premiumAmount" column="premium_amount" />
         <property name="coverageAmount" column="coverage_amount" />
@@ -18,3 +22,8 @@
 
     </class>
 </hibernate-mapping>
+
+
+<!--  <many-to-one name="insurancePlan" class="InsurancePlan" fetch="join" column="plan_id"/> -->
+<!--<many-to-one name="insuranceCompany" class="InsuranceCompany" fetch="join" column="company_id"/>  -->
+

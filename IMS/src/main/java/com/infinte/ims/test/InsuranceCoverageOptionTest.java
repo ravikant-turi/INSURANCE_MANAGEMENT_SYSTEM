@@ -9,6 +9,8 @@ public class InsuranceCoverageOptionTest {
 		InsuranceCoverageOptionDao doa=new InsuranceCoverageOptionDaoImpl();
 		
 		doa.showAllInsuranceCoverageOption().forEach(System.out::println);
+		
+	    System.out.println(doa.searchInsuranceCoverageOptionById("COV117"));
 	}
 
 }
